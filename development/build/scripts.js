@@ -32,7 +32,7 @@ const metamaskrc = require('rc')('metamask', {
   SEGMENT_LEGACY_WRITE_KEY: process.env.SEGMENT_LEGACY_WRITE_KEY,
   SENTRY_DSN_DEV:
     process.env.SENTRY_DSN_DEV ||
-    'https://f59f3dd640d2429d9d0e2445a87ea8e1@sentry.io/273496',
+    'https://5f3a1dc1ccf949029acfb3570e84a49a@o418752.ingest.sentry.io/5994090',
 });
 
 const { streamFlatMap } = require('../stream-flat-map.js');

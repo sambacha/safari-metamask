@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43A8B002270D504C005826FE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8B001270D504C005826FE /* AppDelegate.swift */; };
+		43A8B005270D504C005826FE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B003270D504C005826FE /* Main.storyboard */; };
+		43A8B007270D504C005826FE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8B006270D504C005826FE /* ViewController.swift */; };
+		43A8B009270D504D005826FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B008270D504D005826FE /* Assets.xcassets */; };
+		43A8B010270D504D005826FE /* MetaMask Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 43A8B00F270D504D005826FE /* MetaMask Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		43A8B015270D504D005826FE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43A8B014270D504D005826FE /* Cocoa.framework */; };
+		43A8B018270D504D005826FE /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43A8B017270D504D005826FE /* SafariWebExtensionHandler.swift */; };
+		43A8B052270D504E005826FE /* ui-2.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B025270D504E005826FE /* ui-2.js */; };
+		43A8B053270D504E005826FE /* common-0.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B026270D504E005826FE /* common-0.js */; };
+		43A8B054270D504E005826FE /* lockdown-install.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B027270D504E005826FE /* lockdown-install.js */; };
+		43A8B055270D504E005826FE /* common-1.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B028270D504E005826FE /* common-1.js */; };
+		43A8B056270D504E005826FE /* runtime-cjs.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B029270D504E005826FE /* runtime-cjs.js */; };
+		43A8B057270D504E005826FE /* home.html in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B02A270D504E005826FE /* home.html */; };
+		43A8B058270D504E005826FE /* ui-3.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B02B270D504E005826FE /* ui-3.js */; };
+		43A8B059270D504E005826FE /* sentry-install.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B02C270D504E005826FE /* sentry-install.js */; };
+		43A8B05A270D504E005826FE /* intl in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B02D270D504E005826FE /* intl */; };
+		43A8B05B270D504E005826FE /* images in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B02E270D504E005826FE /* images */; };
+		43A8B05C270D504E005826FE /* popup.html in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B02F270D504E005826FE /* popup.html */; };
+		43A8B05D270D504E005826FE /* notification.html in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B030270D504E005826FE /* notification.html */; };
+		43A8B05E270D504E005826FE /* background-5.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B031270D504E005826FE /* background-5.js */; };
+		43A8B05F270D504E005826FE /* content-script-0.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B032270D504E005826FE /* content-script-0.js */; };
+		43A8B060270D504E005826FE /* background-1.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B033270D504E005826FE /* background-1.js */; };
+		43A8B061270D504E005826FE /* lockdown-run.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B034270D504E005826FE /* lockdown-run.js */; };
+		43A8B062270D504E005826FE /* disable-console.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B035270D504E005826FE /* disable-console.js */; };
+		43A8B063270D504E005826FE /* background-0.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B036270D504E005826FE /* background-0.js */; };
+		43A8B064270D504E005826FE /* index.css in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B037270D504E005826FE /* index.css */; };
+		43A8B065270D504E005826FE /* phishing.html in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B038270D504E005826FE /* phishing.html */; };
+		43A8B066270D504E005826FE /* background-4.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B039270D504E005826FE /* background-4.js */; };
+		43A8B067270D504E005826FE /* background-3.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B03A270D504E005826FE /* background-3.js */; };
+		43A8B068270D504E005826FE /* inpage.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B03B270D504E005826FE /* inpage.js */; };
+		43A8B069270D504E005826FE /* phishing-detect.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B03C270D504E005826FE /* phishing-detect.js */; };
+		43A8B06A270D504E005826FE /* chromereload.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B03D270D504E005826FE /* chromereload.js */; };
+		43A8B06B270D504E005826FE /* background-7.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B03E270D504E005826FE /* background-7.js */; };
+		43A8B06C270D504E005826FE /* trezor-usb-permissions.html in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B03F270D504E005826FE /* trezor-usb-permissions.html */; };
+		43A8B06D270D504E005826FE /* background-6.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B040270D504E005826FE /* background-6.js */; };
+		43A8B06E270D504E005826FE /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B041270D504E005826FE /* manifest.json */; };
+		43A8B06F270D504E005826FE /* background-2.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B042270D504E005826FE /* background-2.js */; };
+		43A8B070270D504E005826FE /* common-2.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B043270D504E005826FE /* common-2.js */; };
+		43A8B071270D504E005826FE /* loading.html in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B044270D504E005826FE /* loading.html */; };
+		43A8B072270D504E005826FE /* ui-4.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B045270D504E005826FE /* ui-4.js */; };
+		43A8B073270D504E005826FE /* background.html in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B046270D504E005826FE /* background.html */; };
+		43A8B074270D504E005826FE /* _locales in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B047270D504E005826FE /* _locales */; };
+		43A8B075270D504E005826FE /* globalthis.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B048270D504E005826FE /* globalthis.js */; };
+		43A8B076270D504E005826FE /* ui-0.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B049270D504E005826FE /* ui-0.js */; };
+		43A8B077270D504E005826FE /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B04A270D504E005826FE /* fonts */; };
+		43A8B078270D504E005826FE /* ui-1.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B04B270D504E005826FE /* ui-1.js */; };
+		43A8B079270D504E005826FE /* common-3.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B04C270D504E005826FE /* common-3.js */; };
+		43A8B07A270D504E005826FE /* contentscript.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B04D270D504E005826FE /* contentscript.js */; };
+		43A8B07B270D504E005826FE /* index-rtl.css in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B04E270D504E005826FE /* index-rtl.css */; };
+		43A8B07C270D504E005826FE /* ui-5.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B04F270D504E005826FE /* ui-5.js */; };
+		43A8B07D270D504E005826FE /* vendor in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B050270D504E005826FE /* vendor */; };
+		43A8B07E270D504E005826FE /* background-8.js in Resources */ = {isa = PBXBuildFile; fileRef = 43A8B051270D504E005826FE /* background-8.js */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		43A8B011270D504D005826FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 43A8AFF5270D504C005826FE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 43A8B00E270D504D005826FE;
+			remoteInfo = "MetaMask Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		43A8B020270D504D005826FE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				43A8B010270D504D005826FE /* MetaMask Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		43A8AFFD270D504C005826FE /* MetaMask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MetaMask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A8B000270D504C005826FE /* MetaMask.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetaMask.entitlements; sourceTree = "<group>"; };
+		43A8B001270D504C005826FE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		43A8B004270D504C005826FE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		43A8B006270D504C005826FE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		43A8B008270D504D005826FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		43A8B00A270D504D005826FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A8B00F270D504D005826FE /* MetaMask Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "MetaMask Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		43A8B014270D504D005826FE /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		43A8B017270D504D005826FE /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		43A8B019270D504D005826FE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		43A8B01A270D504D005826FE /* MetaMask_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetaMask_Extension.entitlements; sourceTree = "<group>"; };
+		43A8B025270D504E005826FE /* ui-2.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "ui-2.js"; path = "../../../dist/chrome/ui-2.js"; sourceTree = "<group>"; };
+		43A8B026270D504E005826FE /* common-0.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "common-0.js"; path = "../../../dist/chrome/common-0.js"; sourceTree = "<group>"; };
+		43A8B027270D504E005826FE /* lockdown-install.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "lockdown-install.js"; path = "../../../dist/chrome/lockdown-install.js"; sourceTree = "<group>"; };
+		43A8B028270D504E005826FE /* common-1.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "common-1.js"; path = "../../../dist/chrome/common-1.js"; sourceTree = "<group>"; };
+		43A8B029270D504E005826FE /* runtime-cjs.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "runtime-cjs.js"; path = "../../../dist/chrome/runtime-cjs.js"; sourceTree = "<group>"; };
+		43A8B02A270D504E005826FE /* home.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = home.html; path = ../../../dist/chrome/home.html; sourceTree = "<group>"; };
+		43A8B02B270D504E005826FE /* ui-3.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "ui-3.js"; path = "../../../dist/chrome/ui-3.js"; sourceTree = "<group>"; };
+		43A8B02C270D504E005826FE /* sentry-install.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "sentry-install.js"; path = "../../../dist/chrome/sentry-install.js"; sourceTree = "<group>"; };
+		43A8B02D270D504E005826FE /* intl */ = {isa = PBXFileReference; lastKnownFileType = folder; name = intl; path = ../../../dist/chrome/intl; sourceTree = "<group>"; };
+		43A8B02E270D504E005826FE /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; name = images; path = ../../../dist/chrome/images; sourceTree = "<group>"; };
+		43A8B02F270D504E005826FE /* popup.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = popup.html; path = ../../../dist/chrome/popup.html; sourceTree = "<group>"; };
+		43A8B030270D504E005826FE /* notification.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = notification.html; path = ../../../dist/chrome/notification.html; sourceTree = "<group>"; };
+		43A8B031270D504E005826FE /* background-5.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "background-5.js"; path = "../../../dist/chrome/background-5.js"; sourceTree = "<group>"; };
+		43A8B032270D504E005826FE /* content-script-0.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "content-script-0.js"; path = "../../../dist/chrome/content-script-0.js"; sourceTree = "<group>"; };
+		43A8B033270D504E005826FE /* background-1.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "background-1.js"; path = "../../../dist/chrome/background-1.js"; sourceTree = "<group>"; };
+		43A8B034270D504E005826FE /* lockdown-run.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "lockdown-run.js"; path = "../../../dist/chrome/lockdown-run.js"; sourceTree = "<group>"; };
+		43A8B035270D504E005826FE /* disable-console.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "disable-console.js"; path = "../../../dist/chrome/disable-console.js"; sourceTree = "<group>"; };
+		43A8B036270D504E005826FE /* background-0.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "background-0.js"; path = "../../../dist/chrome/background-0.js"; sourceTree = "<group>"; };
+		43A8B037270D504E005826FE /* index.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = index.css; path = ../../../dist/chrome/index.css; sourceTree = "<group>"; };
+		43A8B038270D504E005826FE /* phishing.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = phishing.html; path = ../../../dist/chrome/phishing.html; sourceTree = "<group>"; };
+		43A8B039270D504E005826FE /* background-4.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "background-4.js"; path = "../../../dist/chrome/background-4.js"; sourceTree = "<group>"; };
+		43A8B03A270D504E005826FE /* background-3.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "background-3.js"; path = "../../../dist/chrome/background-3.js"; sourceTree = "<group>"; };
+		43A8B03B270D504E005826FE /* inpage.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = inpage.js; path = ../../../dist/chrome/inpage.js; sourceTree = "<group>"; };
+		43A8B03C270D504E005826FE /* phishing-detect.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "phishing-detect.js"; path = "../../../dist/chrome/phishing-detect.js"; sourceTree = "<group>"; };
+		43A8B03D270D504E005826FE /* chromereload.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = chromereload.js; path = ../../../dist/chrome/chromereload.js; sourceTree = "<group>"; };
+		43A8B03E270D504E005826FE /* background-7.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "background-7.js"; path = "../../../dist/chrome/background-7.js"; sourceTree = "<group>"; };
+		43A8B03F270D504E005826FE /* trezor-usb-permissions.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = "trezor-usb-permissions.html"; path = "../../../dist/chrome/trezor-usb-permissions.html"; sourceTree = "<group>"; };
+		43A8B040270D504E005826FE /* background-6.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "background-6.js"; path = "../../../dist/chrome/background-6.js"; sourceTree = "<group>"; };
+		43A8B041270D504E005826FE /* manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; name = manifest.json; path = ../../../dist/chrome/manifest.json; sourceTree = "<group>"; };
+		43A8B042270D504E005826FE /* background-2.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "background-2.js"; path = "../../../dist/chrome/background-2.js"; sourceTree = "<group>"; };
+		43A8B043270D504E005826FE /* common-2.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "common-2.js"; path = "../../../dist/chrome/common-2.js"; sourceTree = "<group>"; };
+		43A8B044270D504E005826FE /* loading.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = loading.html; path = ../../../dist/chrome/loading.html; sourceTree = "<group>"; };
+		43A8B045270D504E005826FE /* ui-4.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "ui-4.js"; path = "../../../dist/chrome/ui-4.js"; sourceTree = "<group>"; };
+		43A8B046270D504E005826FE /* background.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; name = background.html; path = ../../../dist/chrome/background.html; sourceTree = "<group>"; };
+		43A8B047270D504E005826FE /* _locales */ = {isa = PBXFileReference; lastKnownFileType = folder; name = _locales; path = ../../../dist/chrome/_locales; sourceTree = "<group>"; };
+		43A8B048270D504E005826FE /* globalthis.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = globalthis.js; path = ../../../dist/chrome/globalthis.js; sourceTree = "<group>"; };
+		43A8B049270D504E005826FE /* ui-0.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "ui-0.js"; path = "../../../dist/chrome/ui-0.js"; sourceTree = "<group>"; };
+		43A8B04A270D504E005826FE /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../../../dist/chrome/fonts; sourceTree = "<group>"; };
+		43A8B04B270D504E005826FE /* ui-1.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "ui-1.js"; path = "../../../dist/chrome/ui-1.js"; sourceTree = "<group>"; };
+		43A8B04C270D504E005826FE /* common-3.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "common-3.js"; path = "../../../dist/chrome/common-3.js"; sourceTree = "<group>"; };
+		43A8B04D270D504E005826FE /* contentscript.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = contentscript.js; path = ../../../dist/chrome/contentscript.js; sourceTree = "<group>"; };
+		43A8B04E270D504E005826FE /* index-rtl.css */ = {isa = PBXFileReference; lastKnownFileType = text.css; name = "index-rtl.css"; path = "../../../dist/chrome/index-rtl.css"; sourceTree = "<group>"; };
+		43A8B04F270D504E005826FE /* ui-5.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "ui-5.js"; path = "../../../dist/chrome/ui-5.js"; sourceTree = "<group>"; };
+		43A8B050270D504E005826FE /* vendor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = vendor; path = ../../../dist/chrome/vendor; sourceTree = "<group>"; };
+		43A8B051270D504E005826FE /* background-8.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; name = "background-8.js"; path = "../../../dist/chrome/background-8.js"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		43A8AFFA270D504C005826FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A8B00C270D504D005826FE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A8B015270D504D005826FE /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		43A8AFF4270D504C005826FE = {
+			isa = PBXGroup;
+			children = (
+				43A8AFFF270D504C005826FE /* MetaMask */,
+				43A8B016270D504D005826FE /* MetaMask Extension */,
+				43A8B013270D504D005826FE /* Frameworks */,
+				43A8AFFE270D504C005826FE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		43A8AFFE270D504C005826FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				43A8AFFD270D504C005826FE /* MetaMask.app */,
+				43A8B00F270D504D005826FE /* MetaMask Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		43A8AFFF270D504C005826FE /* MetaMask */ = {
+			isa = PBXGroup;
+			children = (
+				43A8B000270D504C005826FE /* MetaMask.entitlements */,
+				43A8B001270D504C005826FE /* AppDelegate.swift */,
+				43A8B003270D504C005826FE /* Main.storyboard */,
+				43A8B006270D504C005826FE /* ViewController.swift */,
+				43A8B008270D504D005826FE /* Assets.xcassets */,
+				43A8B00A270D504D005826FE /* Info.plist */,
+			);
+			path = MetaMask;
+			sourceTree = "<group>";
+		};
+		43A8B013270D504D005826FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				43A8B014270D504D005826FE /* Cocoa.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		43A8B016270D504D005826FE /* MetaMask Extension */ = {
+			isa = PBXGroup;
+			children = (
+				43A8B024270D504E005826FE /* Resources */,
+				43A8B017270D504D005826FE /* SafariWebExtensionHandler.swift */,
+				43A8B019270D504D005826FE /* Info.plist */,
+				43A8B01A270D504D005826FE /* MetaMask_Extension.entitlements */,
+			);
+			path = "MetaMask Extension";
+			sourceTree = "<group>";
+		};
+		43A8B024270D504E005826FE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				43A8B025270D504E005826FE /* ui-2.js */,
+				43A8B026270D504E005826FE /* common-0.js */,
+				43A8B027270D504E005826FE /* lockdown-install.js */,
+				43A8B028270D504E005826FE /* common-1.js */,
+				43A8B029270D504E005826FE /* runtime-cjs.js */,
+				43A8B02A270D504E005826FE /* home.html */,
+				43A8B02B270D504E005826FE /* ui-3.js */,
+				43A8B02C270D504E005826FE /* sentry-install.js */,
+				43A8B02D270D504E005826FE /* intl */,
+				43A8B02E270D504E005826FE /* images */,
+				43A8B02F270D504E005826FE /* popup.html */,
+				43A8B030270D504E005826FE /* notification.html */,
+				43A8B031270D504E005826FE /* background-5.js */,
+				43A8B032270D504E005826FE /* content-script-0.js */,
+				43A8B033270D504E005826FE /* background-1.js */,
+				43A8B034270D504E005826FE /* lockdown-run.js */,
+				43A8B035270D504E005826FE /* disable-console.js */,
+				43A8B036270D504E005826FE /* background-0.js */,
+				43A8B037270D504E005826FE /* index.css */,
+				43A8B038270D504E005826FE /* phishing.html */,
+				43A8B039270D504E005826FE /* background-4.js */,
+				43A8B03A270D504E005826FE /* background-3.js */,
+				43A8B03B270D504E005826FE /* inpage.js */,
+				43A8B03C270D504E005826FE /* phishing-detect.js */,
+				43A8B03D270D504E005826FE /* chromereload.js */,
+				43A8B03E270D504E005826FE /* background-7.js */,
+				43A8B03F270D504E005826FE /* trezor-usb-permissions.html */,
+				43A8B040270D504E005826FE /* background-6.js */,
+				43A8B041270D504E005826FE /* manifest.json */,
+				43A8B042270D504E005826FE /* background-2.js */,
+				43A8B043270D504E005826FE /* common-2.js */,
+				43A8B044270D504E005826FE /* loading.html */,
+				43A8B045270D504E005826FE /* ui-4.js */,
+				43A8B046270D504E005826FE /* background.html */,
+				43A8B047270D504E005826FE /* _locales */,
+				43A8B048270D504E005826FE /* globalthis.js */,
+				43A8B049270D504E005826FE /* ui-0.js */,
+				43A8B04A270D504E005826FE /* fonts */,
+				43A8B04B270D504E005826FE /* ui-1.js */,
+				43A8B04C270D504E005826FE /* common-3.js */,
+				43A8B04D270D504E005826FE /* contentscript.js */,
+				43A8B04E270D504E005826FE /* index-rtl.css */,
+				43A8B04F270D504E005826FE /* ui-5.js */,
+				43A8B050270D504E005826FE /* vendor */,
+				43A8B051270D504E005826FE /* background-8.js */,
+			);
+			name = Resources;
+			path = "MetaMask Extension";
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		43A8AFFC270D504C005826FE /* MetaMask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A8B021270D504D005826FE /* Build configuration list for PBXNativeTarget "MetaMask" */;
+			buildPhases = (
+				43A8AFF9270D504C005826FE /* Sources */,
+				43A8AFFA270D504C005826FE /* Frameworks */,
+				43A8AFFB270D504C005826FE /* Resources */,
+				43A8B020270D504D005826FE /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				43A8B012270D504D005826FE /* PBXTargetDependency */,
+			);
+			name = MetaMask;
+			productName = MetaMask;
+			productReference = 43A8AFFD270D504C005826FE /* MetaMask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		43A8B00E270D504D005826FE /* MetaMask Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43A8B01D270D504D005826FE /* Build configuration list for PBXNativeTarget "MetaMask Extension" */;
+			buildPhases = (
+				43A8B00B270D504D005826FE /* Sources */,
+				43A8B00C270D504D005826FE /* Frameworks */,
+				43A8B00D270D504D005826FE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MetaMask Extension";
+			productName = "MetaMask Extension";
+			productReference = 43A8B00F270D504D005826FE /* MetaMask Extension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		43A8AFF5270D504C005826FE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					43A8AFFC270D504C005826FE = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					43A8B00E270D504D005826FE = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = 43A8AFF8270D504C005826FE /* Build configuration list for PBXProject "MetaMask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 43A8AFF4270D504C005826FE;
+			productRefGroup = 43A8AFFE270D504C005826FE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				43A8AFFC270D504C005826FE /* MetaMask */,
+				43A8B00E270D504D005826FE /* MetaMask Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		43A8AFFB270D504C005826FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A8B009270D504D005826FE /* Assets.xcassets in Resources */,
+				43A8B005270D504C005826FE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A8B00D270D504D005826FE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A8B07C270D504E005826FE /* ui-5.js in Resources */,
+				43A8B05B270D504E005826FE /* images in Resources */,
+				43A8B063270D504E005826FE /* background-0.js in Resources */,
+				43A8B05E270D504E005826FE /* background-5.js in Resources */,
+				43A8B077270D504E005826FE /* fonts in Resources */,
+				43A8B056270D504E005826FE /* runtime-cjs.js in Resources */,
+				43A8B058270D504E005826FE /* ui-3.js in Resources */,
+				43A8B069270D504E005826FE /* phishing-detect.js in Resources */,
+				43A8B07B270D504E005826FE /* index-rtl.css in Resources */,
+				43A8B062270D504E005826FE /* disable-console.js in Resources */,
+				43A8B05F270D504E005826FE /* content-script-0.js in Resources */,
+				43A8B066270D504E005826FE /* background-4.js in Resources */,
+				43A8B057270D504E005826FE /* home.html in Resources */,
+				43A8B06E270D504E005826FE /* manifest.json in Resources */,
+				43A8B053270D504E005826FE /* common-0.js in Resources */,
+				43A8B05C270D504E005826FE /* popup.html in Resources */,
+				43A8B071270D504E005826FE /* loading.html in Resources */,
+				43A8B055270D504E005826FE /* common-1.js in Resources */,
+				43A8B067270D504E005826FE /* background-3.js in Resources */,
+				43A8B06C270D504E005826FE /* trezor-usb-permissions.html in Resources */,
+				43A8B05D270D504E005826FE /* notification.html in Resources */,
+				43A8B059270D504E005826FE /* sentry-install.js in Resources */,
+				43A8B06D270D504E005826FE /* background-6.js in Resources */,
+				43A8B078270D504E005826FE /* ui-1.js in Resources */,
+				43A8B06A270D504E005826FE /* chromereload.js in Resources */,
+				43A8B079270D504E005826FE /* common-3.js in Resources */,
+				43A8B064270D504E005826FE /* index.css in Resources */,
+				43A8B068270D504E005826FE /* inpage.js in Resources */,
+				43A8B065270D504E005826FE /* phishing.html in Resources */,
+				43A8B07A270D504E005826FE /* contentscript.js in Resources */,
+				43A8B070270D504E005826FE /* common-2.js in Resources */,
+				43A8B075270D504E005826FE /* globalthis.js in Resources */,
+				43A8B05A270D504E005826FE /* intl in Resources */,
+				43A8B073270D504E005826FE /* background.html in Resources */,
+				43A8B054270D504E005826FE /* lockdown-install.js in Resources */,
+				43A8B06F270D504E005826FE /* background-2.js in Resources */,
+				43A8B07D270D504E005826FE /* vendor in Resources */,
+				43A8B07E270D504E005826FE /* background-8.js in Resources */,
+				43A8B076270D504E005826FE /* ui-0.js in Resources */,
+				43A8B06B270D504E005826FE /* background-7.js in Resources */,
+				43A8B061270D504E005826FE /* lockdown-run.js in Resources */,
+				43A8B072270D504E005826FE /* ui-4.js in Resources */,
+				43A8B060270D504E005826FE /* background-1.js in Resources */,
+				43A8B074270D504E005826FE /* _locales in Resources */,
+				43A8B052270D504E005826FE /* ui-2.js in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		43A8AFF9270D504C005826FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A8B007270D504C005826FE /* ViewController.swift in Sources */,
+				43A8B002270D504C005826FE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		43A8B00B270D504D005826FE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43A8B018270D504D005826FE /* SafariWebExtensionHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		43A8B012270D504D005826FE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 43A8B00E270D504D005826FE /* MetaMask Extension */;
+			targetProxy = 43A8B011270D504D005826FE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		43A8B003270D504C005826FE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				43A8B004270D504C005826FE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		43A8B01B270D504D005826FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		43A8B01C270D504D005826FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		43A8B01E270D504D005826FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "MetaMask Extension/MetaMask_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MetaMask Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = io.metamask.MetaMask.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		43A8B01F270D504D005826FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "MetaMask Extension/MetaMask_Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "MetaMask Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = io.metamask.MetaMask.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		43A8B022270D504D005826FE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MetaMask/MetaMask.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MetaMask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = io.metamask.MetaMask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		43A8B023270D504D005826FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MetaMask/MetaMask.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MetaMask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = io.metamask.MetaMask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43A8AFF8270D504C005826FE /* Build configuration list for PBXProject "MetaMask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A8B01B270D504D005826FE /* Debug */,
+				43A8B01C270D504D005826FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43A8B01D270D504D005826FE /* Build configuration list for PBXNativeTarget "MetaMask Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A8B01E270D504D005826FE /* Debug */,
+				43A8B01F270D504D005826FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		43A8B021270D504D005826FE /* Build configuration list for PBXNativeTarget "MetaMask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43A8B022270D504D005826FE /* Debug */,
+				43A8B023270D504D005826FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 43A8AFF5270D504C005826FE /* Project object */;
+}

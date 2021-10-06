@@ -40,6 +40,7 @@
     "test:coverage:strict": "nyc --check-coverage yarn test:unit:strict",
     "test:coverage:path": "nyc --check-coverage yarn test:unit:path",
     "ganache:start": "./development/run-ganache.sh",
+    "safari-extension-convert": "echo yes | xcrun safari-web-extension-converter --swift --no-open --bundle-identifier io.metamask.MetaMask --project-location ./safari/ ./dist/chrome",
     "sentry:publish": "node ./development/sentry-publish.js",
     "lint": "prettier --check '**/*.json' && eslint . --ext js,snap --cache && yarn lint:styles",
     "lint:fix": "prettier --write '**/*.json' && eslint . --ext js --cache --fix",
